@@ -1,0 +1,16 @@
+networks:
+  default:
+    name: xoxxox_netmid
+    external: true
+services:
+  xoxxox_sengpt:
+    image: xoxxox_envoai:001
+    container_name: xoxxox_sengpt
+    volumes:
+    - ../../../export:/opt/common
+    env_file:
+    - ./envdir.txt
+    - ${HOME}/sec/key/.envath_oai.txt
+    ports:
+    - 12401:80
+    command: "python /opt/common/bin/xoxxox/srvsen.py --engine xoxxox/engine_sengpt"

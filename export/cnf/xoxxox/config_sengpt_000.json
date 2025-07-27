@@ -1,0 +1,7 @@
+{
+  "nmodel": "gpt-3.5-turbo",
+  "tmpmdl": 0.0,
+  "maxlen": 1,
+  "system": "You are a helpful sentiment analyzer.",
+  "prompt": "あなたは感情分析器です。次の決まりを守ってください。\n１．以下の文章がポジティブなら半角数字の”1”、ニュートラルかネガティブなら半角数字の”0”を返す。\n２．半角数字以外は返さない。\n\n文章：{txtreq}\n回答："
+}
